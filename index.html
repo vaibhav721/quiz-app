@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+<style>
+    .topnav {
+  overflow: hidden;
+  background-color: #6EB350;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding-left:0px;
+  padding-top:17px;
+  padding-bottom:17px;
+
+  text-align: center;
+}
+.topnav ul {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding-left:-10px;
+  padding-top:30px;
+  padding-bottom:17px;
+
+  text-align: center;
+}
+
+ .topnav-right a{
+    float:right;
+    padding-left:15px;
+    padding-right:50px;
+}
+ 
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <ul class="topnav" id="topnav">
+  <a id=leaderboard> Highscores <i class="fas fa-hand-point-left fa-lg"></i></a>
+
+      
+      </a>
+      </div>
+</ul>
+<ul id="highScoreList"></ul>
+ 
+  <a>
+
+    </header>
+ 
+    <div class="start_btn"></div>
+       
+        <div class="info_box">
+        <div class="info-title"><span>Coding quiz challenge</span></div>
+        <div class="info-list">
+            <div class="info">Try to answer the following questions within the time limit</div>   
+        </div>
+       
+    
+   <div class="buttons">
+       <button class="quit">Exit quiz</button>
+       <button class="restart">Continue</button>
+       </div>
+    </div>
+    <!--Quiz box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!--inserted question from javascript-->
+                    </div>
+
+                <div class="option_list">
+                    <!--inserted question from javascript-->
+                </div>
+            </section>
+            <footer>
+                <div class="total_que">
+                    <!--Here inserted Question Count number from javascript-->
+                    </div>
+                <button class="next_btn">Next Que</button>
+                </footer>
+        </div>
+        <!-- Result Box-->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!--Here I've inserted score result from javascript-->
+                </div>
+                <div class="buttons">
+                    <button class="restart">Replay Quiz</button>
+                    <button class="quit">Quit Quiz</button>
+                    </div>
+        </div>
+    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script>
+    
+</body>
+
+</html>
